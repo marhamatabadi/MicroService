@@ -23,7 +23,7 @@ namespace PlatformService.SyncDataServices.Http
                Encoding.UTF8,
                "application/json"
                 );
-            var url = $"{_configuration["CommandServiceUrl"]}/api/command/platforms";
+            var url = $"{_configuration["CommandServiceUrl"]}/api/command/Platforms";
             var response = await _httpClient.PostAsync(url, httpContent);
             if (response.IsSuccessStatusCode)
                 Console.WriteLine("Sync POST to CommandService was OK!");
