@@ -9,7 +9,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["PlatformService/PlatformService.csproj", "PlatformService/"]
 RUN dotnet restore "./PlatformService/PlatformService.csproj"
-COPY ./PlatformService .
+COPY . .
 WORKDIR "/src/PlatformService"
 RUN dotnet build "./PlatformService.csproj" -c $BUILD_CONFIGURATION -o /app/build
 

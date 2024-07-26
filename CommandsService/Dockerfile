@@ -9,7 +9,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["CommandsService/CommandsService.csproj", "CommandsService/"]
 RUN dotnet restore "./CommandsService/CommandsService.csproj"
-COPY ./CommandsService .
+COPY . .
 WORKDIR "/src/CommandsService"
 RUN dotnet build "./CommandsService.csproj" -c $BUILD_CONFIGURATION -o /app/build
 

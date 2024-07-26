@@ -11,7 +11,7 @@ namespace CommandsService.Controllers
                 
         }
 
-        [HttpGet]
+        [HttpPost]
         public IActionResult TestInbound()
         {
             Console.WriteLine("Inbound request works on command service....");
