@@ -3,3 +3,10 @@ dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.InMemory
+
+
+***********************************************************************
+kubectl version
+kubectl apply -f platform-depl.yaml
+kubectl get [deployments|services|pods]
+kubectl delete [deployment|service|pod] name
